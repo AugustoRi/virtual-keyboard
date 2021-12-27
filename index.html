@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teclado virtual</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2>
+        Projeto de teclado virtual via javascript,
+        <br>
+        Fase inicial, sujeito a melhoramento posterior.
+      </h2>
+    </div><!--container-->
+  </header>
+  <main>
+    <div class="container">
+      <!-- value="0" -->
+      <input 
+        type="text"
+        class="mostrar-digitacao"
+        id="campo-digitacao-usuario"
+        value=""
+      >  
+      <section class="teclado">
+        <div class="teclado-wrap">
+          <div class="teclado-single"><button class="tecla">1</button></div>
+          <div class="teclado-single"><button class="tecla">2</button></div>
+          <div class="teclado-single"><button class="tecla">3</button></div>
+          <div class="teclado-single"><button class="tecla">4</button></div>
+          <div class="teclado-single"><button class="tecla">5</button></div>
+          <div class="teclado-single"><button class="tecla">6</button></div>
+          <div class="teclado-single"><button class="tecla">7</button></div>
+          <div class="teclado-single"><button class="tecla">8</button></div>
+          <div class="teclado-single"><button class="tecla">9</button></div>
+          <div class="teclado-single"><button class="tecla">0</button></div>
+          <div class="teclado-single" id="backspace"><button>⌫</button></div>
+        </div><!--teclado-wrap-->
+
+        <div class="teclado-wrap" id="firstRow">
+          <div class="teclado-single"><button class="tecla letra">q</button></div>
+          <div class="teclado-single"><button class="tecla letra">w</button></div>
+          <div class="teclado-single"><button class="tecla letra">e</button></div>
+          <div class="teclado-single"><button class="tecla letra">r</button></div>
+          <div class="teclado-single"><button class="tecla letra">t</button></div>
+          <div class="teclado-single"><button class="tecla letra">y</button></div>
+          <div class="teclado-single"><button class="tecla letra">u</button></div>
+          <div class="teclado-single"><button class="tecla letra">i</button></div>
+          <div class="teclado-single"><button class="tecla letra">o</button></div>
+          <div class="teclado-single"><button class="tecla letra">p</button></div>
+        </div><!--teclado-wrap-->
+
+        <div class="teclado-wrap" id="secondRow">
+          <div class="teclado-single" id="capsLock"><button id="capslock">⇧</button></div>
+          <div class="teclado-single"><button class="tecla letra">a</button></div>
+          <div class="teclado-single"><button class="tecla letra">s</button></div>
+          <div class="teclado-single"><button class="tecla letra">d</button></div>
+          <div class="teclado-single"><button class="tecla letra">f</button></div>
+          <div class="teclado-single"><button class="tecla letra">g</button></div>
+          <div class="teclado-single"><button class="tecla letra">h</button></div>
+          <div class="teclado-single"><button class="tecla letra">j</button></div>
+          <div class="teclado-single"><button class="tecla letra">k</button></div>
+          <div class="teclado-single"><button class="tecla letra">l</button></div>
+          <div class="teclado-single" id="enter"><button>⏎</button></div>
+        </div><!--teclado-wrap-->
+
+        <div class="teclado-wrap" id="thirdRow">
+          <div class="teclado-single"><button class="tecla letra">z</button></div>
+          <div class="teclado-single"><button class="tecla letra">x</button></div>
+          <div class="teclado-single"><button class="tecla letra">c</button></div>
+          <div class="teclado-single"><button class="tecla letra">v</button></div>
+          <div class="teclado-single"><button class="tecla letra">b</button></div>
+          <div class="teclado-single"><button class="tecla letra">n</button></div>
+          <div class="teclado-single"><button class="tecla letra">m</button></div>
+          <div class="teclado-single"><button class="tecla">,</button></div>
+          <div class="teclado-single"><button class="tecla">.</button></div>
+          <div class="teclado-single"><button class="tecla">?</button></div>
+        </div><!--teclado-wrap-->
+
+        <div class="teclado-wrap">
+          <div class="teclado-single" id="space"><button>space</button></div>
+        </div><!--teclado-wrap-->
+      </section><!--teclado-->
+    </div><!--container-->
+  </main>
+  <script src="./script/script.js"></script>
+</body>
+</html>
